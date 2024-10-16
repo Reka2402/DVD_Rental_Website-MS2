@@ -58,6 +58,8 @@ namespace DVD_Rental_Website.Service
         }
 
         //add a rental
+    
+
         public async Task<RentalResponseModel> AddRental(RentalResponseModel rentalRequestDTO)
         {
             var rental = new Rent
@@ -84,8 +86,8 @@ namespace DVD_Rental_Website.Service
             return rentalresp;
         }
 
-
         //rental accept status
+
         public async Task<RentalResponseModel> RentalAccept(Guid id)
         {
             var Rentdata = await _rentalRepository.GetRentalByID(id);
@@ -112,7 +114,9 @@ namespace DVD_Rental_Website.Service
             }
         }
 
+
         // update rental status to return
+
         public async Task<RentalResponseModel> UpdateRentToReturn(Guid id)
         {
             var Rentdata = await _rentalRepository.GetRentalByID(id);
@@ -139,7 +143,9 @@ namespace DVD_Rental_Website.Service
             }
         }
 
+
         //get all rentals
+
         public async Task<List<RentalResponseModel>> GetAllRentals()
         {
             var customer = await _rentalRepository.GetAllRentals();
@@ -165,6 +171,7 @@ namespace DVD_Rental_Website.Service
         }
 
         //reject rental by id
+
         public async Task<bool> RejectRental(Guid rentalid)
         {
             var rental = await _rentalRepository.GetRentalByID(rentalid);
@@ -175,6 +182,7 @@ namespace DVD_Rental_Website.Service
         }
 
         // check and update overdue rentals
+
         public async Task<List<Guid>> CheckAndUpdateOverdueRentals()
         {
             var overdue = await _rentalRepository.CheckAndUpdateOverdueRentals();

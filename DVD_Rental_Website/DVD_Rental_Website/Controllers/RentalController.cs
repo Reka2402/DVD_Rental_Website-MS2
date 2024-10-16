@@ -40,7 +40,7 @@ namespace DVD_Rental_Website.Controllers
         //get all rental customers
 
         [HttpGet("rentals/customer/{customerId}")]
-        public async Task<IActionResult> GetAllRentalsByCustomerId(Guid customerId)
+        public async Task<IActionResult> GetAllRentalByCustomerId(Guid customerId)
         {
             try
             {
