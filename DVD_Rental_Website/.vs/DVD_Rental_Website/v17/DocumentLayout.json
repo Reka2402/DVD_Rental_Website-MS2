@@ -88,8 +88,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T11:35:00.555Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -142,7 +141,7 @@
               "RelativeDocumentMoniker": "DVD_Rental_Website\\Controllers\\RentalController.cs",
               "ToolTip": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Controllers\\RentalController.cs",
               "RelativeToolTip": "DVD_Rental_Website\\Controllers\\RentalController.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAiwF4AAAAEAAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAcwJIAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T11:24:31.532Z",
               "EditorCaption": ""
@@ -181,8 +180,7 @@
               "RelativeToolTip": "DVD_Rental_Website\\Repository\\RentalRepository.cs",
               "ViewState": "AQIAAGQAAAAAAAAAAAA0wCUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:23:42.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:23:42.799Z"
             },
             {
               "$type": "Document",

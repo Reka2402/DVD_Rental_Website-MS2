@@ -129,6 +129,7 @@ namespace DVD_Rental_Website.Controllers
 
 
         //reject rental by id
+       
         [HttpDelete("RejectRental/{rentalid}")]
         public async Task<IActionResult> RejectRenatal(Guid rentalid)
         {
@@ -138,8 +139,12 @@ namespace DVD_Rental_Website.Controllers
             return Ok("sccessfully deleted");
         }
 
+
         // check and update overdue rentals
 
+        [HttpGet("CheckAndUpdateOverdueRentals")]
+
+    
         [HttpGet("CheckAndUpdateOverdueRentals")]
 
         public async Task<IActionResult> CheckAndUpdateOverdueRentals()
