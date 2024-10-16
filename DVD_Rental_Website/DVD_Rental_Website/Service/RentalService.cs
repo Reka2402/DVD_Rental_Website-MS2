@@ -15,22 +15,22 @@ namespace DVD_Rental_Website.Service
             _rentalRepository = rentalRepository;
         }
         //get rental by id
-        //public async Task<RentalResponseModel> GetRentalById(Guid id)
-        //{
-        //    var data = await _rentalRepository.GetRentalByID(id);
-        //    var rentalresp = new RentalResponseModel
-        //    {
-        //        RentalId = data.id,
-        //        CustomerID = data.CustomerID,
-        //        DVDId = data.DVDId,
-        //        Returndate = data.Returndate,
-        //        status = data.status,
-        //        Isoverdue = data.Isoverdue,
-        //        RentalDate = data.RentalDate,
-        //    };
+        public async Task<RentalResponseModel> GetRentalById(Guid id)
+        {
+            var data = await _rentalRepository.GetRentalByID(id);
+            var rentalresp = new RentalResponseModel
+            {
+                RentalId = data.RentalId,
+                CustomerID = data.CustomerID,
+                DVDId = data.DVDId,
+                Returndate = data.Returndate,
+                status = data.status,
+                Isoverdue = data.Isoverdue,
+                RentalDate = data.RentalDate,
+            };
 
-        //    return rentalresp;
-        //}
+            return rentalresp;
+        }
 
         //get all rental customers
         public async Task<List<RentalResponseModel>> GetAllRentalsByCustomerId(Guid customerId)

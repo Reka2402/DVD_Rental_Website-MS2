@@ -6,7 +6,7 @@ namespace DVD_Rental_Website.IService
     public interface IRentalService
     {
 
-        //Task<RentalResponseModel> GetRentalById(Guid id);
+        Task<RentalResponseModel> GetRentalById(Guid id);
         Task<List<RentalResponseModel>> GetAllRentalsByCustomerId(Guid customerId);
         //Task<RentalResponseModel> AddRental(RentalResponseModel rentalRequestDTO);
         Task<RentalResponseModel> RentalAccept(Guid id);

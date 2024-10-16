@@ -21,21 +21,21 @@ namespace DVD_Rental_Website.Controllers
         }
 
         //get rental by id
-        //[HttpGet("rental/{id}")]
-        //public async Task<IActionResult> GetRentalById(Guid id)
-        //{
-        //    try
-        //    {
-        //        var result = await _rentalServies.GetRentalById(id);
-        //        if (result == null)
-        //            return NotFound("Rental not found");
-        //        return Ok(result);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Internal server error: {ex.Message}");
-        //    }
-        //}
+        [HttpGet("rental/{id}")]
+        public async Task<IActionResult> GetRentalById(Guid id)
+        {
+            try
+            {
+                var result = await _rentalServies.GetRentalById(id);
+                if (result == null)
+                    return NotFound("Rental not found");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
 
         //get all rental customers
 
