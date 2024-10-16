@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|x:\\dvd rental project\\new folder\\dvd_rental_website-ms2-\\dvd_rental_website\\dvd_rental_website\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|solutionrelative:dvd_rental_website\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|x:\\dvd rental project\\new folder\\dvd_rental_website-ms2-\\dvd_rental_website\\dvd_rental_website\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|solutionrelative:dvd_rental_website\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|x:\\dvd rental project\\new folder\\dvd_rental_website-ms2-\\dvd_rental_website\\dvd_rental_website\\model\\response models\\rentalresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|solutionrelative:dvd_rental_website\\model\\response models\\rentalresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|x:\\dvd rental project\\new folder\\dvd_rental_website-ms2-\\dvd_rental_website\\dvd_rental_website\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|solutionrelative:dvd_rental_website\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67E1DF40-A2B5-4C13-ADB2-A959CC33E5BB}|DVD_Rental_Website\\DVD_Rental_Website.csproj|x:\\dvd rental project\\new folder\\dvd_rental_website-ms2-\\dvd_rental_website\\dvd_rental_website\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Service\\CustomerService.cs",
               "RelativeDocumentMoniker": "DVD_Rental_Website\\Service\\CustomerService.cs",
@@ -135,32 +135,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RentalController.cs",
               "DocumentMoniker": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Controllers\\RentalController.cs",
               "RelativeDocumentMoniker": "DVD_Rental_Website\\Controllers\\RentalController.cs",
               "ToolTip": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Controllers\\RentalController.cs",
               "RelativeToolTip": "DVD_Rental_Website\\Controllers\\RentalController.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAcwJIAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T11:24:31.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Rent.cs",
               "DocumentMoniker": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Entities\\Rent.cs",
               "RelativeDocumentMoniker": "DVD_Rental_Website\\Entities\\Rent.cs",
               "ToolTip": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Entities\\Rent.cs",
               "RelativeToolTip": "DVD_Rental_Website\\Entities\\Rent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:27:43.939Z"
+              "WhenOpened": "2024-10-15T11:27:43.939Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RentalResponseModel.cs",
               "DocumentMoniker": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Model\\Response Models\\RentalResponseModel.cs",
               "RelativeDocumentMoniker": "DVD_Rental_Website\\Model\\Response Models\\RentalResponseModel.cs",
@@ -172,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RentalRepository.cs",
               "DocumentMoniker": "X:\\DVD Rental Project\\New folder\\DVD_Rental_Website-MS2-\\DVD_Rental_Website\\DVD_Rental_Website\\Repository\\RentalRepository.cs",
               "RelativeDocumentMoniker": "DVD_Rental_Website\\Repository\\RentalRepository.cs",

@@ -12,13 +12,13 @@ namespace DVD_Rental_Website.Controllers
     [ApiController]
     public class RentalController : ControllerBase
     {
+      
         private readonly IRentalService _rentalServies;
 
         public RentalController(IRentalService rentalServies)
         {
             _rentalServies = rentalServies;
         }
-
 
         //get rental by id
         //[HttpGet("rental/{id}")]
@@ -113,6 +113,7 @@ namespace DVD_Rental_Website.Controllers
 
         //get all rentals
 
+   
         [HttpGet("GetAllRentals")]
         public async Task<IActionResult> GetAllRentals()
         {
@@ -127,9 +128,8 @@ namespace DVD_Rental_Website.Controllers
             }
         }
 
-
         //reject rental by id
-       
+
         [HttpDelete("RejectRental/{rentalid}")]
         public async Task<IActionResult> RejectRenatal(Guid rentalid)
         {
@@ -142,9 +142,7 @@ namespace DVD_Rental_Website.Controllers
 
         // check and update overdue rentals
 
-        [HttpGet("CheckAndUpdateOverdueRentals")]
-
-    
+ 
         [HttpGet("CheckAndUpdateOverdueRentals")]
 
         public async Task<IActionResult> CheckAndUpdateOverdueRentals()
