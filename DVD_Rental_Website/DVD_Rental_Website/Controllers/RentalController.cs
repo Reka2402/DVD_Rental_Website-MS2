@@ -38,6 +38,7 @@ namespace DVD_Rental_Website.Controllers
         //}
 
         //get all rental customers
+
         [HttpGet("rentals/customer/{customerId}")]
         public async Task<IActionResult> GetAllRentalsByCustomerId(Guid customerId)
         {
@@ -51,6 +52,8 @@ namespace DVD_Rental_Website.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+
 
         //add a rental
 
@@ -70,7 +73,9 @@ namespace DVD_Rental_Website.Controllers
         //}
 
         //rental accept status
-        [HttpPut("Rental-Accept/{id}")]
+        
+
+        [HttpPut("rental-accept/{id}")]
         public async Task<IActionResult> RentalAccept(Guid id)
         {
             try
@@ -85,8 +90,9 @@ namespace DVD_Rental_Website.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
-
         // update rental status to return
+
+    
 
         [HttpPut("dvd-return/{id}")]
         public async Task<IActionResult> UpdateRentToReturn(Guid id)
@@ -103,6 +109,7 @@ namespace DVD_Rental_Website.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
 
         //get all rentals
 
