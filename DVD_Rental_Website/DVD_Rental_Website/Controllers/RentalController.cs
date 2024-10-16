@@ -12,6 +12,7 @@ namespace DVD_Rental_Website.Controllers
     [ApiController]
     public class RentalController : ControllerBase
     {
+      
         private readonly IRentalService _rentalServies;
 
         public RentalController(IRentalService rentalServies)
@@ -19,27 +20,27 @@ namespace DVD_Rental_Website.Controllers
             _rentalServies = rentalServies;
         }
 
-
         //get rental by id
-        //[HttpGet("rental/{id}")]
-        //public async Task<IActionResult> GetRentalById(Guid id)
-        //{
-        //    try
-        //    {
-        //        var result = await _rentalServies.GetRentalById(id);
-        //        if (result == null)
-        //            return NotFound("Rental not found");
-        //        return Ok(result);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Internal server error: {ex.Message}");
-        //    }
-        //}
+        [HttpGet("rental/{id}")]
+        public async Task<IActionResult> GetRentalById(Guid id)
+        {
+            try
+            {
+                var result = await _rentalServies.GetRentalById(id);
+                if (result == null)
+                    return NotFound("Rental not found");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
 
         //get all rental customers
+
         [HttpGet("rentals/customer/{customerId}")]
-        public async Task<IActionResult> GetAllRentalsByCustomerId(Guid customerId)
+        public async Task<IActionResult> GetAllRentalByCustomerId(Guid customerId)
         {
             try
             {
@@ -51,6 +52,8 @@ namespace DVD_Rental_Website.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+
 
         //add a rental
 
@@ -70,7 +73,9 @@ namespace DVD_Rental_Website.Controllers
         //}
 
         //rental accept status
-        [HttpPut("Rental-Accept/{id}")]
+        
+
+        [HttpPut("rental-accept/{id}")]
         public async Task<IActionResult> RentalAccept(Guid id)
         {
             try
@@ -85,8 +90,9 @@ namespace DVD_Rental_Website.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
-
         // update rental status to return
+
+    
 
         [HttpPut("dvd-return/{id}")]
         public async Task<IActionResult> UpdateRentToReturn(Guid id)
@@ -104,8 +110,10 @@ namespace DVD_Rental_Website.Controllers
             }
         }
 
+
         //get all rentals
 
+   
         [HttpGet("GetAllRentals")]
         public async Task<IActionResult> GetAllRentals()
         {
@@ -120,8 +128,8 @@ namespace DVD_Rental_Website.Controllers
             }
         }
 
-
         //reject rental by id
+
         [HttpDelete("RejectRental/{rentalid}")]
         public async Task<IActionResult> RejectRenatal(Guid rentalid)
         {
@@ -131,8 +139,10 @@ namespace DVD_Rental_Website.Controllers
             return Ok("sccessfully deleted");
         }
 
+
         // check and update overdue rentals
 
+ 
         [HttpGet("CheckAndUpdateOverdueRentals")]
 
         public async Task<IActionResult> CheckAndUpdateOverdueRentals()
