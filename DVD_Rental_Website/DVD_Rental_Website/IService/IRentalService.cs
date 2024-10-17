@@ -8,7 +8,7 @@ namespace DVD_Rental_Website.IService
 
         Task<RentalResponseModel> GetRentalById(Guid id);
         Task<List<RentalResponseModel>> GetAllRentalsByCustomerId(Guid customerId);
-        //Task<RentalResponseModel> AddRental(RentalResponseModel rentalRequestDTO);
+        Task<RentalResponseModel> AddRental(RentalResponseModel rentalRequestDTO);
         Task<RentalResponseModel> RentalAccept(Guid id);
         Task<RentalResponseModel> UpdateRentToReturn(Guid id);
         Task<List<RentalResponseModel>> GetAllRentals();

@@ -100,7 +100,7 @@ namespace DVD_Rental_Website.Repository
                 await connection.OpenAsync();
 
                 var sqlCommand = new SqlCommand(
-                    "UPDATE DVDs SET UserName = @Title, Genre = @Genre, Director  = @Director , " +
+                    "UPDATE DVDs SET Title = @Title, Genre = @Genre, Director  = @Director , " +
                     "ReleaseDate = @ReleaseDate, CopiesAvailable = @CopiesAvailable WHERE Id = @Id", connection);
 
                 sqlCommand.Parameters.AddWithValue("@Id", updatedDVD.Id);
@@ -115,7 +115,7 @@ namespace DVD_Rental_Website.Repository
                 return updatedDVD;
             }
         }
-
+        
         public async Task<DVD> DeleteDVD(DVD DVDToDelete)
         {
             using (var connection = new SqlConnection(_connectionString))
