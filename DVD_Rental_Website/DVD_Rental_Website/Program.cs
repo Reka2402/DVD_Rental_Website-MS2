@@ -27,6 +27,12 @@ namespace DVD_Rental_Website
             builder.Services.AddScoped<ICustomerRepository>(provider => new CustomerRepository(connectionString));
             builder.Services.AddScoped<ICustomerService, CustomerServie>();
 
+            builder.Services.AddScoped<IManagerRepository>(provider => new ManagerRepository(connectionString));
+            builder.Services.AddScoped<IManagerService, ManagerService>();
+
+            builder.Services.AddScoped<IRentalRepository>(provider => new RentalRepository(connectionString));
+            builder.Services.AddScoped<IRentalService, RentalService>();
+
             builder.Services.AddCors(options =>
             {
                 options.AddDefaultPolicy(builder =>
