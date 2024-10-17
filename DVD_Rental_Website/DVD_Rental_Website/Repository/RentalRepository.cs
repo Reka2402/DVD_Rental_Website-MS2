@@ -259,7 +259,7 @@ namespace DVD_Rental_Website.Repository
                         var returndate = reader.GetDateTime(reader.GetOrdinal("Returndate"));
                         var rentalId = reader.GetGuid(reader.GetOrdinal("RentalId"));
 
-                        if (DateTime.Now > returndate.AddHours(24))
+                        if (DateTime.Now > returndate.AddDays(7))
                         {
                             overdueRentalIds.Add(rentalId);
                         }
